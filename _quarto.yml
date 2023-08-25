@@ -1,0 +1,22 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Blog"
+  favicon: blog.svg
+  navbar:
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/WKSu/
+      - icon: linkedin
+        href: https://www.linkedin.com/in/wang-kevin-su/
+format:
+  html:
+    theme: yeti
+    css: styles.css
+
+execute:
+  freeze: auto
+

@@ -1,0 +1,18 @@
+---
+title: "About"
+image: profile_wanderer.jpg
+about:
+  template: jolla
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/wang-kevin-su/
+    - icon: github
+      text: Github
+      href: https://github.com/WKSu/
+
+---
+
+I like to use this space to share some of my thoughts and projects. 
+
+I cannot say what it will be about because I don't know either! Just going to have fun with it. 😊👽
