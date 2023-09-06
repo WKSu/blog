@@ -1,0 +1,1 @@
+{"rule":"PASSIVE_VOICE","sentence":"^\\QAs you embark on the climbing journey, you won't notice it at the beginning, but a seed is planted within you.\\E$"}

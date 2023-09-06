@@ -1,0 +1,1 @@
+{"rule":"PASSIVE_VOICE","sentence":"^\\QLetting go is not seen as an option.\\E$"}

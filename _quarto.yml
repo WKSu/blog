@@ -4,6 +4,8 @@ project:
 
 website:
   title: "Blog"
+  site-url: https://blog.kevinsu.nl/
+  description: "Capturing the Sublime in my World"
   favicon: blog.svg
   navbar:
     right:
@@ -12,6 +14,8 @@ website:
         href: https://github.com/WKSu/
       - icon: linkedin
         href: https://www.linkedin.com/in/wang-kevin-su/
+      - icon: rss
+        href: index.xml
 format:
   html:
     theme: yeti
