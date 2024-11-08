@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.6.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Blog - Capturing the Sublime in my World</title>
+<title>Capturing the Sublime in my World – Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -38,17 +38,23 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2486e1f0a3ee9ee1fc393803a1361cdb.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-4ebd2eb7c9ff38b57148d0e3da08e0a3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -57,6 +63,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -92,52 +99,79 @@ ul.task-list li input[type="checkbox"] {
   })
   </script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
 <link rel="stylesheet" href="styles.css">
-<link rel="alternate" type="application/rss+xml" title="Blog" href="index.xml"></head>
+<link rel="alternate" type="application/rss+xml" title="Blog" href="index.xml" data-external="1"></head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Blog</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
- <span class="menu-text">About</span></a>
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/WKSu/" rel="" target=""><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/WKSu/"> <i class="bi bi-github" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/wang-kevin-su/" rel="" target=""><i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/wang-kevin-su/"> <i class="bi bi-linkedin" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./index.xml" rel="" target=""><i class="bi bi-rss" role="img">
+    <a class="nav-link" href="./index.xml"> <i class="bi bi-rss" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
 </ul>
+          </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
-          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -150,7 +184,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
     
   
-  <div class="quarto-title-meta">
+  <div class="quarto-title-meta column-page-left">
 
       
     
@@ -163,7 +197,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="alchemist">alchemist <span class="quarto-category-count">(1)</span></div><div class="category" data-category="burnout society">burnout society <span class="quarto-category-count">(1)</span></div><div class="category" data-category="canada">canada <span class="quarto-category-count">(2)</span></div><div class="category" data-category="climbing">climbing <span class="quarto-category-count">(2)</span></div><div class="category" data-category="exclusivity">exclusivity <span class="quarto-category-count">(1)</span></div><div class="category" data-category="history">history <span class="quarto-category-count">(1)</span></div><div class="category" data-category="personal">personal <span class="quarto-category-count">(2)</span></div><div class="category" data-category="purpose">purpose <span class="quarto-category-count">(1)</span></div><div class="category" data-category="siddhartha">siddhartha <span class="quarto-category-count">(1)</span></div><div class="category" data-category="surveillance capitalism">surveillance capitalism <span class="quarto-category-count">(1)</span></div><div class="category" data-category="technology">technology <span class="quarto-category-count">(1)</span></div><div class="category" data-category="travel">travel <span class="quarto-category-count">(1)</span></div><div class="category" data-category="wilderness">wilderness <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(7)</span></div><div class="category" data-category="Tm9yd2F5">Norway <span class="quarto-category-count">(1)</span></div><div class="category" data-category="YWxjaGVtaXN0">alchemist <span class="quarto-category-count">(1)</span></div><div class="category" data-category="YmVsaWVm">belief <span class="quarto-category-count">(1)</span></div><div class="category" data-category="YnVybm91dCBzb2NpZXR5">burnout society <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y2FuYWRh">canada <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Y2xpbWJpbmc=">climbing <span class="quarto-category-count">(2)</span></div><div class="category" data-category="ZXhjbHVzaXZpdHk=">exclusivity <span class="quarto-category-count">(1)</span></div><div class="category" data-category="aGlzdG9yeQ==">history <span class="quarto-category-count">(1)</span></div><div class="category" data-category="aG91c2VsZXNz">houseless <span class="quarto-category-count">(1)</span></div><div class="category" data-category="am91cm5leQ==">journey <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bWV0YW1vcnBob3Npcw==">metamorphosis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cGVyc29uYWw=">personal <span class="quarto-category-count">(2)</span></div><div class="category" data-category="cHVycG9zZQ==">purpose <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cXVhbGlh">qualia <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c2lkZGhhcnRoYQ==">siddhartha <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c3VydmVpbGxhbmNlIGNhcGl0YWxpc20=">surveillance capitalism <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dGVjaG5vbG9neQ==">technology <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dHJhaW4=">train <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dHJhbnNmb3JtYXRpb24=">transformation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dHJhdmVs">travel <span class="quarto-category-count">(1)</span></div><div class="category" data-category="d2lsZGVybmVzcw==">wilderness <span class="quarto-category-count">(1)</span></div><div class="category" data-category="d3JpdGluZw==">writing <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -174,195 +208,267 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="personal,purpose,alchemist,siddhartha" data-listing-date-sort="1691791200000" data-listing-file-modified-sort="1694024792788" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
+<div class="quarto-post image-right" data-index="0" data-categories="Tm9yd2F5LHRyYWluLGhvdXNlbGVzcyxiZWxpZWY=" data-listing-date-sort="1730588400000" data-listing-file-modified-sort="1731109734483" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2777">
 <div class="thumbnail">
-<p><a href="./posts/20230812-do-not-know-where-to-go-directionless/index.html"> <p class="card-img-top"><img src="posts\20230812-do-not-know-where-to-go-directionless\ferryman.jpg"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/20241109-norway/index.html" class="no-external"></a></p><a href="./posts/20241109-norway/index.html" class="no-external">
+<p><img loading="lazy" src="./posts/20241109-norway/nightsky.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/20241109-norway/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/20230812-do-not-know-where-to-go-directionless/index.html">
 <h3 class="no-anchor listing-title">
-When you do not know where to go.
+<a href="./posts/20241109-norway/index.html" class="no-external">The peace and quiet in Norway [1/2]</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/20241109-norway/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Tm9yd2F5'); return false;">
+Norway
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('dHJhaW4='); return false;">
+train
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('aG91c2VsZXNz'); return false;">
+houseless
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('YmVsaWVm'); return false;">
+belief
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/20241109-norway/index.html" class="no-external">Finding inner peace in Norway</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/20241109-norway/index.html" class="no-external">
+<div class="listing-date">
+Nov 3, 2024
 </div>
 </a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="dHJhbnNmb3JtYXRpb24sam91cm5leSxtZXRhbW9ycGhvc2lzLHF1YWxpYSx3cml0aW5n" data-listing-date-sort="1730502000000" data-listing-file-modified-sort="1731109732647" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="994">
+<div class="thumbnail">
+<p><a href="./posts/20241101-transformation/index.html" class="no-external"></a></p><a href="./posts/20241101-transformation/index.html" class="no-external">
+<p><img loading="lazy" src="./posts/20241101-transformation/25ebb7c4-001b-4b4d-af80-1b4c6cc2f600.webp" class="thumbnail-image"></p>
+</a><p><a href="./posts/20241101-transformation/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/20241101-transformation/index.html" class="no-external">Communicating my experiences</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/20241101-transformation/index.html" class="no-external"></a>
+</div>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('personal'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('dHJhbnNmb3JtYXRpb24='); return false;">
+transformation
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('am91cm5leQ=='); return false;">
+journey
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('bWV0YW1vcnBob3Npcw=='); return false;">
+metamorphosis
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('cXVhbGlh'); return false;">
+qualia
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('d3JpdGluZw=='); return false;">
+writing
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/20241101-transformation/index.html" class="no-external">Why it is so hard writing what you want to write about</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/20241101-transformation/index.html" class="no-external">
+<div class="listing-date">
+Nov 2, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="cGVyc29uYWwscHVycG9zZSxhbGNoZW1pc3Qsc2lkZGhhcnRoYQ==" data-listing-date-sort="1691791200000" data-listing-file-modified-sort="1710186314000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1259">
+<div class="thumbnail">
+<p><a href="./posts/20230812-do-not-know-where-to-go-directionless/index.html" class="no-external"></a></p><a href="./posts/20230812-do-not-know-where-to-go-directionless/index.html" class="no-external">
+<p class="card-img-top"><img src="posts\20230812-do-not-know-where-to-go-directionless\ferryman.jpg"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/20230812-do-not-know-where-to-go-directionless/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/20230812-do-not-know-where-to-go-directionless/index.html" class="no-external">When you do not know where to go.</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/20230812-do-not-know-where-to-go-directionless/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('cGVyc29uYWw='); return false;">
 personal
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('purpose'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('cHVycG9zZQ=='); return false;">
 purpose
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('alchemist'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('YWxjaGVtaXN0'); return false;">
 alchemist
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('siddhartha'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('c2lkZGhhcnRoYQ=='); return false;">
 siddhartha
 </div>
 </div>
-<a href="./posts/20230812-do-not-know-where-to-go-directionless/index.html">
 <div class="listing-description">
-<p>The feeling of being directionless.</p>
+<a href="./posts/20230812-do-not-know-where-to-go-directionless/index.html" class="no-external">The feeling of being directionless.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/20230812-do-not-know-where-to-go-directionless/index.html">
+<a href="./posts/20230812-do-not-know-where-to-go-directionless/index.html" class="no-external">
 <div class="listing-date">
 Aug 12, 2023
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="personal,climbing,burnout society" data-listing-date-sort="1686952800000" data-listing-file-modified-sort="1694013800313" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9">
+<div class="quarto-post image-right" data-index="3" data-categories="cGVyc29uYWwsY2xpbWJpbmcsYnVybm91dCBzb2NpZXR5" data-listing-date-sort="1686952800000" data-listing-file-modified-sort="1694013800000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1668">
 <div class="thumbnail">
-<p><a href="./posts/20230617-climbing-my-mind-stop/index.html"> <img src="./posts/20230617-climbing-my-mind-stop/alhambra.png" class="thumbnail-image"> </a></p>
+<p><a href="./posts/20230617-climbing-my-mind-stop/index.html" class="no-external"></a></p><a href="./posts/20230617-climbing-my-mind-stop/index.html" class="no-external">
+<p><img loading="lazy" src="./posts/20230617-climbing-my-mind-stop/alhambra.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/20230617-climbing-my-mind-stop/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/20230617-climbing-my-mind-stop/index.html">
 <h3 class="no-anchor listing-title">
-When you cannot stop
+<a href="./posts/20230617-climbing-my-mind-stop/index.html" class="no-external">When you cannot stop</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/20230617-climbing-my-mind-stop/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('personal'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('cGVyc29uYWw='); return false;">
 personal
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('climbing'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('Y2xpbWJpbmc='); return false;">
 climbing
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('burnout society'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('YnVybm91dCBzb2NpZXR5'); return false;">
 burnout society
 </div>
 </div>
-<a href="./posts/20230617-climbing-my-mind-stop/index.html">
 <div class="listing-description">
-<p>Discovering myself one climb at a time.</p>
+<a href="./posts/20230617-climbing-my-mind-stop/index.html" class="no-external">Discovering myself one climb at a time.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/20230617-climbing-my-mind-stop/index.html">
+<a href="./posts/20230617-climbing-my-mind-stop/index.html" class="no-external">
 <div class="listing-date">
 Jun 17, 2023
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="canada,travel,exclusivity,history,wilderness" data-listing-date-sort="1659391200000" data-listing-file-modified-sort="1694012473409" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="22">
+<div class="quarto-post image-right" data-index="4" data-categories="Y2FuYWRhLHRyYXZlbCxleGNsdXNpdml0eSxoaXN0b3J5LHdpbGRlcm5lc3M=" data-listing-date-sort="1659391200000" data-listing-file-modified-sort="1694012473000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="22" data-listing-word-count-sort="4251">
 <div class="thumbnail">
-<p><a href="./posts/20220802-canada-travelling-nowadays/index.html"> <img src="./posts/20220802-canada-travelling-nowadays/images/overview_folders.jpg" class="thumbnail-image"> </a></p>
+<p><a href="./posts/20220802-canada-travelling-nowadays/index.html" class="no-external"></a></p><a href="./posts/20220802-canada-travelling-nowadays/index.html" class="no-external">
+<p><img loading="lazy" src="./posts/20220802-canada-travelling-nowadays/images/overview_folders.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/20220802-canada-travelling-nowadays/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/20220802-canada-travelling-nowadays/index.html">
 <h3 class="no-anchor listing-title">
-Travelling Nowadays
+<a href="./posts/20220802-canada-travelling-nowadays/index.html" class="no-external">Travelling Nowadays</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/20220802-canada-travelling-nowadays/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('canada'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('Y2FuYWRh'); return false;">
 canada
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('travel'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('dHJhdmVs'); return false;">
 travel
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('exclusivity'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhjbHVzaXZpdHk='); return false;">
 exclusivity
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('history'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('aGlzdG9yeQ=='); return false;">
 history
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('wilderness'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('d2lsZGVybmVzcw=='); return false;">
 wilderness
 </div>
 </div>
-<a href="./posts/20220802-canada-travelling-nowadays/index.html">
 <div class="listing-description">
-<p>My thoughts and reflections on my recent trip to Canada exploring the wilderness, exclusivity, and history.</p>
+<a href="./posts/20220802-canada-travelling-nowadays/index.html" class="no-external">My thoughts and reflections on my recent trip to Canada exploring the wilderness, exclusivity, and history.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/20220802-canada-travelling-nowadays/index.html">
+<a href="./posts/20220802-canada-travelling-nowadays/index.html" class="no-external">
 <div class="listing-date">
 Aug 2, 2022
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="canada,climbing" data-listing-date-sort="1659304800000" data-listing-file-modified-sort="1692972566784" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="18">
+<div class="quarto-post image-right" data-index="5" data-categories="Y2FuYWRhLGNsaW1iaW5n" data-listing-date-sort="1659304800000" data-listing-file-modified-sort="1692972566000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="18" data-listing-word-count-sort="3413">
 <div class="thumbnail">
-<p><a href="./posts/20220801-canada-climb-adventures/index.html"> <img src="./posts/20220801-canada-climb-adventures/images/trailrun_end.jpg" class="thumbnail-image"> </a></p>
+<p><a href="./posts/20220801-canada-climb-adventures/index.html" class="no-external"></a></p><a href="./posts/20220801-canada-climb-adventures/index.html" class="no-external">
+<p><img loading="lazy" src="./posts/20220801-canada-climb-adventures/images/trailrun_end.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/20220801-canada-climb-adventures/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/20220801-canada-climb-adventures/index.html">
 <h3 class="no-anchor listing-title">
-The adventures of a new climber in Canada
+<a href="./posts/20220801-canada-climb-adventures/index.html" class="no-external">The adventures of a new climber in Canada</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/20220801-canada-climb-adventures/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('canada'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('Y2FuYWRh'); return false;">
 canada
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('climbing'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('Y2xpbWJpbmc='); return false;">
 climbing
 </div>
 </div>
-<a href="./posts/20220801-canada-climb-adventures/index.html">
 <div class="listing-description">
-<p>The call of the mountains is answered in the Canadian Rockies and Squamish.</p>
+<a href="./posts/20220801-canada-climb-adventures/index.html" class="no-external">The call of the mountains is answered in the Canadian Rockies and Squamish.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/20220801-canada-climb-adventures/index.html">
+<a href="./posts/20220801-canada-climb-adventures/index.html" class="no-external">
 <div class="listing-date">
 Aug 1, 2022
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="technology,surveillance capitalism" data-listing-date-sort="1620079200000" data-listing-file-modified-sort="1694017937891" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="19">
+<div class="quarto-post image-right" data-index="6" data-categories="dGVjaG5vbG9neSxzdXJ2ZWlsbGFuY2UgY2FwaXRhbGlzbQ==" data-listing-date-sort="1620079200000" data-listing-file-modified-sort="1694017937000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="19" data-listing-word-count-sort="3760">
 <div class="thumbnail">
-<p><a href="./posts/20210504-surveillance-capitalism/index.html"> <img src="./posts/20210504-surveillance-capitalism/unordered.png" class="thumbnail-image"> </a></p>
+<p><a href="./posts/20210504-surveillance-capitalism/index.html" class="no-external"></a></p><a href="./posts/20210504-surveillance-capitalism/index.html" class="no-external">
+<p><img loading="lazy" src="./posts/20210504-surveillance-capitalism/unordered.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/20210504-surveillance-capitalism/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/20210504-surveillance-capitalism/index.html">
 <h3 class="no-anchor listing-title">
-My opposition to social media
+<a href="./posts/20210504-surveillance-capitalism/index.html" class="no-external">My opposition to social media</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/20210504-surveillance-capitalism/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('technology'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('dGVjaG5vbG9neQ=='); return false;">
 technology
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('surveillance capitalism'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('c3VydmVpbGxhbmNlIGNhcGl0YWxpc20='); return false;">
 surveillance capitalism
 </div>
 </div>
-<a href="./posts/20210504-surveillance-capitalism/index.html">
 <div class="listing-description">
-<p>And why I started a blog to share my life.</p>
+<a href="./posts/20210504-surveillance-capitalism/index.html" class="no-external">And why I started a blog to share my life.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/20210504-surveillance-capitalism/index.html">
+<a href="./posts/20210504-surveillance-capitalism/index.html" class="no-external">
 <div class="listing-date">
 May 4, 2021
 </div>
@@ -409,18 +515,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -452,11 +547,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/blog\.kevinsu\.nl\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -466,8 +600,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -479,7 +622,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -523,6 +789,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -548,6 +815,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -608,6 +901,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 

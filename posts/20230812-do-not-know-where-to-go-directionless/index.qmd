@@ -10,7 +10,7 @@ date: "2023-08-12"
 # Introduction
 > Do you ever feel 
 > like a plastic bag 
-> drifting through the wind?[^1]
+> drifting through the wind? - [Firework](https://www.youtube.com/watch?v=QGJuMBdaqIw)
 
 If you read this, you probably know me. I like to think, grow, and reflect. Let me give you a window into my world. This is a series of posts where I will reflect on my personal journey. Welcome to _When you do not know where to go_.
 
@@ -46,7 +46,7 @@ I recognize that the opportunities and upbringing that moulded me into the perso
 My random achievements—earning cum laude at TU Delft, triumphing over social anxiety to become a board member, conquering my swimming phobia at age 25, and finding a good job—often fail to evoke substantial pride. It's akin to reaching a mountaintop by car versus hiking with a burdensome backpack. The vista might be the same, yet the sense of accomplishment is different. While it feels daunting at first, I often look back: was that it? 
 
 # Finding It
-But even without this background, it is even more harmful when you start degrading your own achievements in life. At some point the achievements will blend together to become a grey blend of nothing. Part of the daily routine. While reading Daniel Kahneman's _Thinking, Fast and Slow_, I stumbled upon an intriguing insight. Supported by multiple experiments, our emotional peaks and endings[^2] dominate our overall feelings about an experience. Applying this to my own accomplishments, the sense of pride seems to get overshadowed by the stress (peak) and fatigue (end). There's a mismatch between the actual experience and my memory of it.
+But even without this background, it is even more harmful when you start degrading your own achievements in life. At some point the achievements will blend together to become a grey blend of nothing. Part of the daily routine. While reading Daniel Kahneman's _Thinking, Fast and Slow_, I stumbled upon an intriguing insight. Supported by multiple experiments, our emotional [peaks and endings](https://www.wikiwand.com/en/Peak%E2%80%93end_rule) dominate our overall feelings about an experience. Applying this to my own accomplishments, the sense of pride seems to get overshadowed by the stress (peak) and fatigue (end). There's a mismatch between the actual experience and my memory of it.
 
 I feel this might be one of the reasons why I have been directionless for quite a long time. Letting myself being swept wherever the wind blows. And to be honest, I don't really know how to find a purpose in life. But so far, I have been enjoying the ride. By comparing the Alchemist and Siddhartha, I realized, the search can become never-ending. Longing for more and better every time. But it does give our life a certain meaning, a way for our heart to express itself. See the progress and challenges along the way. 
 
@@ -54,7 +54,3 @@ Unfortunately, I will have to end this post as directionless as I started it. Bu
 
 > Don't feel guilty if you don't know what you want to do with your life. The most interesting people I know didn't know at 22 what they wanted to do with their lives. Some of the most interesting 40-year-olds I know still don't. - 
 [Wear Sunscreen](https://www.youtube.com/watch?v=sTJ7AzBIJoI)
-
-
-[^1]: [https://www.youtube.com/watch?v=QGJuMBdaqIw](https://www.youtube.com/watch?v=QGJuMBdaqIw)
-[^2]: [https://www.wikiwand.com/en/Peak%E2%80%93end_rule](https://www.wikiwand.com/en/Peak%E2%80%93end_rule)
