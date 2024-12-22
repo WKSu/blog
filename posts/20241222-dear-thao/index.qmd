@@ -4,9 +4,12 @@ layout: post
 description: Looking at the past year
 categories:
 draft: true
-title: "Dear Thao, are you surprised?"
+title: "Dear Thảo, are you surprised?"
+
 date: "2024-12-22"
 ---
+![Thảo and I.](thao_and_I.JPEG){height=300}
+
 
 Dear Thảo,
 
